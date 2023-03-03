@@ -1,0 +1,78 @@
+*{color: aliceblue;}
+    
+    #contenedor{
+        background-image: url(../images/fondo.png);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+         display: grid;
+        grid-template-columns:13.5vw 40vw 45vw;
+        grid-template-rows:auto ;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "mapa mapa mapa"
+        "footer footer footer";
+    }
+    #contemedor *{
+        margin: 3px;
+        color: aliceblue;
+    }
+    body{margin: 0;}
+    #header{
+        grid-area: header;
+        color:aliceblue;
+    }
+    #main{
+        grid-area: main;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: space-between;
+        border:2px solid white;border-radius:20px;
+    }
+    #mapa{
+        grid-area: mapa;
+    }
+    /*li{}*/
+    a{text-decoration:none;
+         
+    padding-left: 5px;}
+    ul{padding-left: 1%;
+       width: max-content;
+      padding-right: 10px;
+      border:2px solid white;
+      border-radius:15px;
+     }
+      section{
+        width: 84%;
+      }
+footer{width: 100%;}
+footer p{
+    margin-top:0;
+    margin-bottom: 0;
+    padding-left: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#principal{padding-right: 1%;
+    padding-left: 1%;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/*Intento de poner sombra
+h1{
+    text-shadow: 0 4 5 3 white;
+}*/
+aside li:hover{background-color:rgb(170, 172, 170);}
+aside a:hover{background-color:rgb(180, 180, 180);}
