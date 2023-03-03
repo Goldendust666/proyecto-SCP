@@ -1,0 +1,51 @@
+
+
+
+*{list-style: none;
+color: aliceblue;}
+
+#contenedor{
+    background-image: url(../images/fondo.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+     display: grid;
+    grid-template-columns:10.2vw 40vw 48.5vw;
+    grid-template-rows:auto ;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "mapa mapa mapa"
+    "footer footer footer";
+}
+#contemedor *{
+    margin: 3px;
+    color: aliceblue;
+}
+body{margin: 0;}
+#header{
+    grid-area: header;
+    color:aliceblue;
+}
+#main{
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+}
+#footer{
+    grid-area: footer;
+}
+#mapa{
+    grid-area: mapa;
+}
+li{border:2px solid white;border-radius:20px;}
+a{text-decoration:none;
+padding-left: 5px;}
+ul{padding-left: 0;
+  padding-right: 10px;}
+  section{
+    width: 76%;
+  }
