@@ -7,30 +7,31 @@
     <title>Para los nuevos en la Fundación</title>
     <link rel="stylesheet" href="./css/principal.css">
 </head>
-<div id="contenedor">
 <body>
+<div id="contenedor">
     <header id="header">
         <div>
      <h1>Fundacion SCP</h1>
      <p id="textobuscar"> <label for="buscar">Buscar</label>  <input type="text" name="buscar" id="buscar" maxlength="50" size="20" placeholder=""></p>
      </div>
      <hr>
+     <!--No me salia el border correctamente asi que he dejado el hr  y ademas no le he puesto ninguna fuente por que mientras no le pongan wingdins o letras parecidas a papyrus la pagina se ve bien -->
     </header>
     
 <main id="main">
     <aside id="aside">
         <ul>
             <li>
-             <a href="index.html">Inicio</a>
+             <a href="index.html" style=" text-decoration: underline;">Inicio</a>
             </li>
             <li>       
-             <a href="./html sec/SCP-5094.html" >SCP-5094</a>
+             <a href="./htmlsec/SCP-5094.html" >SCP-5094</a>
             </li>
             <li>
-              <a href="./html sec/SCP-682.html" style=" text-decoration: underline;">SCP-682</a>
+              <a href="./htmlsec/SCP-682.html" >SCP-682</a>
             </li>
             <li>
-             <a href="./html sec/formulario.html">Suscribete</a> 
+             <a href="./htmlsec/formulario.html">Suscribete</a> 
             </li>
             <li>
              <a href="https://www.iesjuanbosco.es/">Instituto donde estudie</a> 
@@ -38,29 +39,61 @@
      </ul>
     </aside>
     <section id="principal">
-        <article>
         <h2>
           Entrenamiento para novatos  
         </h2>
         <hr>
+        <article>
         <p>
          En el siguiente video se te informara de todo lo que tienes que saber para trabajar en nuestras instalaciones
         </p>
-        <video controls autoplay>
-            <source src="" type="">
+        <video controls preload="auto" id="video">
+            <source src="./multimedia/Videoparanovatos.mp4" type="video/mp4">
         </video>
         <audio controls>
-            <source src="" type="">
+            <source src="./multimedia/Audioparanovatos.mp3" type="audio/mpeg">
         </audio>
-        <p>La fundacion SCp es  la encargada de </p>
+        <h3>Clases SCP</h3>
+        <p>La Fundación SCP es una organización secreta con el objetivo de contener y estudiar individuos, entidades, lugares, objetos y fenómenos anómalos que desafían la ley natural (denominados como "objetos SCP" o coloquialmente como "SCP").Si no se contuvieran, los SCP representarían una amenaza para los humanos o, al menos, para el sentido de la realidad y la normalidad de la humanidad.
+
+            La Fundación SCP mantiene en secreto la existencia de los objetos SCP para evitar un pánico masivo y permitir que la civilización humana funcione normalmente. Cuando un SCP es descubierto, la Fundación SCP despliega agentes para recolectar y transportar el SCP a una instalación de la Fundación, o para contenerlo en la ubicación del descubrimiento si transportarlo no es posible. Una vez que los SCP son contenidos, son estudiados por científicos de la Fundación. </p>
+            <p> <strong>Seguro:</strong>  Anomalías suficientemente entendidas hasta el punto en que representan una pequeña amenaza, ya sea debido a una contención confiable o si no crean ningún efecto anómalo a menos que se activen.</p>
+
+            <p><strong>Euclides:</strong>  anomalías que no se comprenden suficientemente o que son inherentemente impredecibles. Si bien no es lo suficientemente peligroso como para ser clasificado como Keter, las entidades de clase Euclid aún son capaces de realizar actos peligrosos y / o devastar el mundo si no se controlan.</p> 
+                
+            <p><strong> Keter:</strong> Anomalías que representan un grave peligro tanto para la Fundación como para el resto de la humanidad, a menudo inherentemente hostiles y requieren procedimientos de contención extensos o complejos, o que no se pueden contener por completo con los recursos actuales de la Fundación.</p>
+                
+            <p><strong>Thaumiel:</strong>  anomalías extremadamente raras que la Fundación utiliza para contener o contrarrestar los efectos de otros SCP, principalmente los de clase Keter, o hacer frente a las secuelas de una brecha de contención incontrolada, ya sea alterando la historia o "restableciendo" la realidad para que el desastre nunca ocurrió.</p>
+                
+            <p><strong>Archon:</strong> Anomalías que no deberían ser contenidas debido al daño que causaría al hacerlo.</p>
+                
+            <p><strong>Apollyon:</strong>  El más peligroso de todos los SCP. Aquellos con esta clasificación son completamente imposibles de contener y representan una amenaza definitiva e inevitable para el mundo en general, y posiblemente más allá. Actualmente, solo dos SCP perfilados en este Wiki tienen esta clasificación: SCP-001 (Propuesta de SD Locke) y SCP-3999.</p>
+                
+            <p><strong>Explicado:</strong>  Una subclase de objeto que ha sido desacreditado como un engaño, lo suficientemente entendido como para ser conocimiento científico normal, o tan ampliamente difundido que la contención ya no es posible.</p> 
+            <h3>Personal</h3>
+            <strong>Clase A</strong> 
+            <p> El personal de Clase A se considera esencial para las operaciones estratégicas de la Fundación, y no se les permite acceso directo a anomalías bajo ninguna circunstancia. Cuando la situación exija la proximidad física entre el personal de Clase A y dichas anomalías (como es el caso de instalaciones que alojan unidades de contención), el personal de clase A no tendrá permitido el acceso a aquellas áreas de la instalación que contengan dichas anomalías, y se mantendrá en áreas seguras en todo momento. En caso de emergencia, el personal de Clase A será evacuado inmediatamente a una ubicación segura fuera de la instalación. Los miembros del Consejo O5 (Supervisores) disfrutan de un status de Clase A permanente.</p> 
+
+            <strong>Clase B</strong> 
+            <p> Los miembros del personal de Clase B se consideran esenciales para las operaciones locales de la Fundación, y sólo podrán acceder a objetos, entidades y anomalías que hayan pasado la debida cuarentena y carezcan de capacidades altera-mentes o agentes meméticos. En caso de una brecha de contención o acción hostil contra una instalación de la Fundación, el personal de Clase B será evacuado a una ubicación segura fuera de la instalación tan pronto como sea posible.</p>
+
+            <strong>Clase C</strong>
+            <p> Los miembros del personal de Clase C tienen acceso directo a la mayoría de aquellas anomalías que no sean estrictamente hostiles o peligrosas. El personal de Clase C que haya tenido contacto directo con propiedades potencialmente altera-mentes o meméticas se someterá a cuarentena y evaluación psiquiátrica según el personal de seguridad lo considere necesario. En caso de brechas de contención o acción hostil contra una instalación de la Fundación, el personal de Clase C no combatiente se dirigirá a áreas selladas seguras o será evacuado si así lo decide el personal de seguridad en caso de que se produzca una brecha de contención que involucre a todo el Sitio u otro evento catastrófico.</p>
+
+            <strong>Clase D</strong> 
+            <p> El personal de Clase D es personal prescindible que se emplea para manejar anomalías extremadamente peligrosas y al que no se le permite contacto alguno con personal de Clase A o Clase B. El personal de Clase D suele reclutarse de entre los reclusos de prisiones de todo el mundo acusados de crímenes violentos, especialmente aquellos que se enfrentan a la pena de muerte. En tiempos particularmente duros, puede instaurarse el Protocolo 12, que permite el uso de otras fuentes de personal (prisioneros políticos, poblaciones de refugiados, otras fuentes civiles) para el reclutamiento de Clase D mediante su transferencia a la custodia de la Fundación en circunstancias que permitan respuestas de negación plausible. El personal de Clase D será sometido regularmente a evaluaciones psiquiátricas regulares, y recibirá la administración de un amnéstico de Clase B o superiores o eliminados al final de un período de servicio de un mes bajo la responsabilidad del personal médico o de seguridad de la instalación. En caso de evento catastrófico que afecte a la instalación, el personal de Clase D será eliminado inmediatamente, salvo que el personal de seguridad de la instalación considere oportuno no hacerlo.</p>
+
+            <strong>Clase E</strong> 
+            <p> La Clase E es una clasificación provisional aplicable sólo a agentes de campo y miembros del personal de contención que hayan sido expuestos a efectos potencialmente dañinos en el curso de una obtención y contención inicial de nuevos objetos, entidades o fenómenos anómalos. El personal de Clase E será sometido a cuarentena, vigilancia y revisión en busca de cambios conductuales, de personalidad o fisiológicos potencialmente dañinos tan pronto como sea posible, y sólo se le permitirá volver a su puesto activo una vez haya dado parte y reciba la autorización pertinente por parte del personal psiquiátrico y médico.</p>    
+            
         </article>
     </section>
 </main>
-  
-   
-   <footer id="footer">
-     <p>Todos los derechos a</p><a href="http://lafundacionscp.wikidot.com/">La wikipedia SCP</a>
+<footer id="footer">
+    <p>Todos los derechos a <a href="http://lafundacionscp.wikidot.com/">la wikipedia SCP</a></p>
+    <p>Pagina realizada por Luis José Almodóvar Cañas</p>
   </footer>
-</body>
 </div>
+</body>
+
 </html>

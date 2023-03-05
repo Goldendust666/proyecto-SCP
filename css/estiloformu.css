@@ -1,9 +1,103 @@
 *{color: aliceblue;}
+    body{
+    height: 100vh; 
+    background-color: rgb(47, 48, 48) solid;   
+    }
+
+    #contemedor *{
+        margin: 3px;
+        color: aliceblue;
+    }
+    body{margin: 0;}
+    #header{
+        grid-area: header;
+        color:aliceblue;
+    }
+    #main{
+        grid-area: main;
+
+    }
+    #footer{
+        grid-area: footer;
+
+
+    }
+    #mapa{
+        grid-area: mapa;
+    }
+   aside a{text-decoration:none;
+        display: block;
+         width: 100%;
+    padding-left: 5px;}
+    ul{
+      border:2px solid white;
+      border-radius:15px;
+     }
+      section{
+        width: 84%;
+      }
+footer{width: 100%;   
+       
+        border:2px solid  white;border-radius:20px;}
+footer p{
+    margin-top:0;
+    margin-bottom: 0;
+    padding-left: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#principal{padding-right: 1%;
+    padding-left: 1%;
+}
+input{color:black}
+textarea{color: black;}
+
+footer p a{ display: inline;}
+aside li:hover{background-color:rgb(170, 172, 170);}
+aside a:hover{background-color:rgb(180, 180, 180);}
+@media  (max-width: 700px){
+    h1{font-size: 2.5em;}
+    section{width: 100%;}
+    #main{
+        display: block;
+    }
+iframe{
+    display: none;
+}
+#footer {
+    display: block;
+}
+header div{
+    display: block;
+}
+ul{padding-left: 1%;
+    width: 100%;
+    padding-right: 1%;
+    }
+#contenedor{
     
+    background-image: url(../images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 95vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    } 
+}
+@media (min-width: 701px){
+    #main{
+        display: flex;
+        justify-content: space-evenly;
+    }
     #contenedor{
         background-image: url(../images/fondo.png);
         background-repeat: no-repeat;
-        height: 100%;
         width: 100%;
         background-size: cover;
         background-attachment: fixed;
@@ -17,62 +111,16 @@
         "mapa mapa mapa"
         "footer footer footer";
     }
-    #contemedor *{
-        margin: 3px;
-        color: aliceblue;
-    }
-    body{margin: 0;}
-    #header{
-        grid-area: header;
-        color:aliceblue;
-    }
-    #main{
-        grid-area: main;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    #footer{
-        grid-area: footer;
-        display: flex;
-        justify-content: space-between;
-        border:2px solid white;border-radius:20px;
-    }
-    #mapa{
-        grid-area: mapa;
-    }
-    /*li{}*/
-    a{text-decoration:none;
-         
-    padding-left: 5px;}
     ul{padding-left: 1%;
-       width: max-content;
-      padding-right: 10px;
-      border:2px solid white;
-      border-radius:15px;
-     }
-      section{
-        width: 84%;
-      }
-footer{width: 100%;}
-footer p{
-    margin-top:0;
-    margin-bottom: 0;
-    padding-left: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-#principal{padding-right: 1%;
-    padding-left: 1%;
-}
+        width: max-content;
+       padding-right: 10px;}
 header div{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-/*Intento de poner sombra
-h1{
-    text-shadow: 0 4 5 3 white;
-}*/
-aside li:hover{background-color:rgb(170, 172, 170);}
-aside a:hover{background-color:rgb(180, 180, 180);}
+#footer{
+    display: flex;
+    justify-content: space-between;}
+}
